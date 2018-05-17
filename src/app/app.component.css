@@ -1,0 +1,842 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.hidden {
+	display: none;
+}
+
+.nospace {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.borderedbox {
+	border: 1px solid;
+}
+
+.font_xxl {
+	font-size: 4em;
+	text-transform: uppercase;
+}
+
+.clear {
+	display: block;
+}
+
+.clear::before,
+.clear::after {
+	display: table;
+	content: "";
+}
+
+.clear,
+.clear::after {
+	clear: both;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+.fl_left,
+.imgl {
+	float: left;
+}
+
+.fl_right,
+.imgr {
+	float: right;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+	line-height: normal;
+	vertical-align: middle;
+}
+
+.imgl {
+	margin: 0 15px 10px 0;
+	clear: left;
+}
+
+.imgr {
+	margin: 0 0 10px 15px;
+	clear: right;
+}
+
+/* Fonts
+-----------------------------------------------------------------------------------*/
+
+body,
+input,
+textarea,
+select {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Generalise
+-----------------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+	margin: 0 0 20px 0;
+	font-size: 22px;
+	line-height: normal;
+	font-weight: normal;
+}
+
+address {
+	font-style: normal;
+	font-weight: normal;
+}
+
+hr {
+	display: block;
+	width: 100%;
+	height: 1px;
+	border: solid;
+	border-width: 1px 0 0 0;
+}
+
+.wrapper {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	word-wrap: break-word;
+}
+
+#topbar,
+#header,
+#mainav,
+#container,
+#footer,
+#copyright {
+	display: block;
+	width: 978px;
+	margin: 0 auto;
+}
+
+/* HTML 5 Overrides
+-----------------------------------------------------------------------------------*/
+
+address,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/* Grid
+-----------------------------------------------------------------------------------*/
+
+.one_half,
+.one_third {
+	display: inline-block;
+	float: left;
+	margin: 0 0 0 3.06748466257669%;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.one_third {
+	width: 31.28834355828221%;
+}
+
+/* Spacing Elements
+-----------------------------------------------------------------------------------*/
+
+.push30 {
+	margin-bottom: 30px;
+}
+
+.row0 {
+	border-bottom: 1px solid;
+}
+
+.row1,
+.row1 a {
+}
+
+.row2 {
+	border: solid;
+	border-width: 1px 0;
+}
+
+.row3,
+.row3 a {
+}
+
+.row4 {
+	border-top: 1px solid;
+}
+
+.row5 {
+	border-top: 1px solid;
+}
+
+/* Top Bar
+---------------------------------------------------------------------------------------------------------------*/
+
+#topbar {
+	font-size: 12px;
+}
+
+#topbar .fl_left {
+	padding-top: 5px;
+}
+
+#topbar .fl_left li {
+	display: inline-block;
+	margin: 0 15px 0 0;
+}
+
+#topbar .fl_left span {
+	margin: 0 5px 0 0;
+}
+
+#topbar .fl_left li:last-child {
+	margin: 0;
+}
+
+#topbar [class^="faicon-"],
+#topbar [class*=" faicon-"] {
+	width: 30px;
+	height: 30px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+/* Header
+---------------------------------------------------------------------------------------------------------------*/
+
+#header {
+	padding: 30px 0;
+}
+
+#logo {
+	float: left;
+}
+
+#logo * {
+	margin: 0;
+	padding: 0;
+}
+
+#logo h1 {
+	font-size: 56px;
+	font-variant: small-caps;
+}
+
+#header .fl_right {
+	margin: 21px 0 0 0;
+}
+
+/* Content Area
+---------------------------------------------------------------------------------------------------------------*/
+
+#container {
+	padding: 50px 0;
+}
+
+/* Content */
+
+#container #content {
+}
+
+/* Comments */
+
+#comments ul {
+	margin: 0 0 40px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#comments li {
+	margin: 0 0 10px 0;
+	padding: 15px;
+}
+
+#comments .avatar {
+	float: right;
+	margin: 0 0 10px 10px;
+	padding: 3px;
+	border: 1px solid;
+}
+
+#comments address {
+	font-weight: bold;
+}
+
+#comments time {
+	font-size: smaller;
+}
+
+#comments .comcont {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#comments .comcont p {
+	margin: 10px 5px 10px 0;
+	padding: 0;
+}
+
+/* Sidebar */
+
+#container .sidebar {
+}
+
+/* Footer
+---------------------------------------------------------------------------------------------------------------*/
+
+#footer {
+	padding: 20px 0;
+}
+
+#footer .title {
+	margin: 0 0 30px 0;
+	padding: 0 0 8px 0;
+	border-bottom: 1px solid;
+	font-size: 18px;
+}
+
+/* Copyright
+---------------------------------------------------------------------------------------------------------------*/
+
+#copyright {
+	padding: 30px 0;
+}
+
+#copyright p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation
+---------------------------------------------------------------------------------------------------------------*/
+
+nav ul,
+nav ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+	position: absolute;
+	font-family: "FontAwesome";
+	font-size: 10px;
+	line-height: 10px;
+}
+
+/* Top Navigation */
+
+#mainav {
+	font-size: 0;
+}
+
+#mainav a {
+	font-size: 14px;
+}
+
+#mainav ul {
+}
+
+#mainav ul ul {
+	z-index: 9999;
+	position: absolute;
+	width: 160px;
+	text-align: left;
+}
+
+#mainav ul ul ul {
+	left: 160px;
+	top: 0;
+}
+
+#mainav li {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#mainav li:last-child {
+	margin-right: 0;
+}
+
+#mainav li li {
+	width: 100%;
+	margin: 0;
+}
+
+#mainav li a {
+	display: block;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	border: solid;
+	border-width: 0 0 0 1px;
+}
+
+#mainav li:last-child a {
+	border-width: 0 1px;
+}
+
+#mainav li li a {
+	border-width: 0 0 1px 0;
+	text-transform: none;
+}
+
+#mainav li li:first-child a,
+#mainav li li:last-child a {
+	border-width: 0 0 1px 0;
+}
+
+#mainav .drop {
+	padding-left: 25px;
+}
+
+#mainav li li a,
+#mainav li li .drop {
+	display: block;
+	margin: 0;
+	padding: 10px 15px;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after {
+	content: "\f0d7";
+}
+
+#mainav .drop::after {
+	top: 20px;
+	left: 15px;
+}
+
+#mainav li li .drop::after {
+	top: 15px;
+	left: 5px;
+}
+
+#mainav ul ul {
+	display: none;
+}
+
+#mainav ul li:hover > ul {
+	display: block;
+}
+
+/* Breadcrumb */
+
+#breadcrumb {
+	margin: 0 0 50px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid;
+}
+
+#breadcrumb ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#breadcrumb li {
+	display: inline-block;
+	margin: 0 6px 0 0;
+	padding: 0;
+}
+
+#breadcrumb li a {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0 12px 0 0;
+	font-size: 12px;
+}
+
+#breadcrumb li a::after {
+	top: 5px;
+	right: 0;
+	content: "\f101";
+}
+
+#breadcrumb li:last-child a {
+	margin: 0;
+	padding: 0;
+}
+
+#breadcrumb li:last-child a::after {
+	display: none;
+}
+
+/* Sidebar Navigation */
+
+/* Forms
+---------------------------------------------------------------------------------------------------------------*/
+
+form,
+fieldset,
+legend {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+legend {
+	display: none;
+}
+
+label,
+input,
+textarea,
+select {
+	display: block;
+	resize: none;
+	font-size: inherit;
+	box-sizing: border-box;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+/* Comment Area */
+
+#comments form {
+	display: block;
+	width: 100%;
+}
+
+#comments input,
+#comments textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+}
+
+#comments textarea {
+	overflow: auto;
+}
+
+#comments div {
+	margin-bottom: 15px;
+}
+
+#comments input[type="submit"],
+#comments input[type="reset"] {
+	display: inline-block;
+	width: auto;
+	min-width: 150px;
+	margin: 0;
+	padding: 8px 5px;
+	cursor: pointer;
+}
+
+/* Gallery
+---------------------------------------------------------------------------------------------------------------*/
+
+#gallery {
+	display: block;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#gallery figure figcaption {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+#gallery li {
+	margin-bottom: 30px;
+}
+
+/* SSS Slider
+---------------------------------------------------------------------------------------------------------------------------------------*/
+
+#slider {
+	position: relative;
+}
+
+.sss {
+	display: block;
+	position: relative;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.ssslide {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.ssslide img {
+	display: block;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.sssprev,
+.sssnext {
+	display: block;
+	position: absolute;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 0;
+	font-family: "FontAwesome";
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.sssprev {
+	left: 30px;
+	margin-left: -100%;
+}
+
+.sssnext {
+	right: 30px;
+	margin-right: -100%;
+}
+
+.sss:hover .sssprev {
+	margin-left: 0;
+}
+
+.sss:hover .sssnext {
+	margin-right: 0;
+}
+
+.sssprev::after,
+.sssnext::after {
+	display: block;
+	width: 100%;
+	padding: 13px 0 0 0;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.sssprev::after {
+	content: "\f053";
+}
+
+.sssnext::after {
+	content: "\f054";
+}
+
+.sssprev,
+.sssnext {
+	opacity: .5;
+}
+
+.sssprev:hover,
+.sssnext:hover {
+	opacity: 1;
+}
+
+.sss:hover .sssprev,
+.sss:hover .sssnext {
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+/* Colours
+---------------------------------------------------------------------------------------------------------------*/
+
+body {
+	color: #999999;
+	background-color: #111111;
+}
+
+a {
+	color: #5174bb;
+}
+
+hr,
+.borderedbox {
+	border-color: #d7d7d7;
+}
+
+label span {
+	color: #ff0000;
+	background-color: inherit;
+}
+
+.lt_bg {
+	color: inherit;
+	background-color: #ffffff;
+}
+
+/* Rows */
+
+.row0 {
+	color: #999999;
+	background-color: #111111;
+	border-color: #333333;
+}
+
+.row1,
+.row1 a {
+	color: #999999;
+	background-color: #111111;
+}
+
+.row2 {
+	color: #ffffff;
+	background-color: #5174bb;
+	border-color: #333333 transparent #ffffff;
+}
+
+.row3 {
+	color: #111111;
+	background-color: #f8f8f8;
+}
+
+.row4 {
+	color: #999999;
+	background-color: #000000;
+}
+
+.row5,
+.row5 a {
+	color: #999999;
+	background-color: #111111;
+}
+
+.row4,
+.row5,
+#footer .title {
+	border-color: #333333;
+}
+
+/* Navigation */
+
+#mainav li a {
+	color: #ffffff;
+	background-color: inherit;
+	border-color: #ffffff;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover > a {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+#mainav li li a,
+#mainav .active li a {
+	color: #ffffff;
+	background-color: rgba(51, 51, 51, .8);
+	border-color: rgba(0, 0, 0, .6);
+}
+
+#mainav li li:hover > a,
+#mainav .active .active > a {
+	color: #ffffff;
+	background-color: #5174bb;
+}
+
+#container .sidebar nav a {
+	color: #000000;
+	border-color: #d7d7d7;
+}
+
+#container .sidebar nav a:hover {
+	color: #5174bb;
+}
+
+#breadcrumb {
+	border-color: #d7d7d7;
+}
+
+.pagination a,
+.pagination strong {
+	border-color: #d7d7d7;
+}
+
+.pagination .current {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+/* SSS Slider */
+
+.sssprev,
+.sssnext {
+	color: #ffffff;
+	background-color: #5174bb;
+}
