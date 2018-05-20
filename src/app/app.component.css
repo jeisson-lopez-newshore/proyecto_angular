@@ -153,6 +153,10 @@ hr {
 	word-wrap: break-word;
 }
 
+.content {
+	height: 60%;
+}
+
 #topbar,
 #header,
 #mainav,
