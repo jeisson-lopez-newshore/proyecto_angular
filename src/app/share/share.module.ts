@@ -6,10 +6,10 @@ import { InMemoryDataService } from './services/angularInmemoryData/in-memory-da
 import { DataBaseAdministratorService } from './services/dataBase/data-base-administrator.service';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 @NgModule({
 	imports: [
@@ -17,13 +17,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 		HttpClientModule,
 		HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService),
 		ReactiveFormsModule,
-		BrowserAnimationsModule,
 		MatButtonModule,
 		MatInputModule,
 		MatFormFieldModule
 	],
-	declarations: [ LoginComponent ],
+	declarations: [ LoginComponent, RegistrationComponent ],
 	providers: [ DataBaseAdministratorService ],
-	exports: [ LoginComponent ]
+	exports: [ LoginComponent, RegistrationComponent ]
 })
 export class ShareModule {}

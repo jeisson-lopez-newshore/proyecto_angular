@@ -25,12 +25,13 @@
              class="clear">
 
             <ul class="clear">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li class=""><a href="/">Home</a></li>
+                <li><a (click)="userLogin()">Login</a></li>
+                <li><a href="authentication/register">Register</a></li>
                 <li><a href="#">Link Text</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
+
 
         </nav>
     </div>
@@ -41,8 +42,7 @@
         <main id="container"
               class="clear">
             <div class="clear">
-                <app-login></app-login>
-                <img src='../assets/img/gestion_proyectos.jpg'>
+                <app-home></app-home>
             </div>
         </main>
     </div>
